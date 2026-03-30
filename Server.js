@@ -4,7 +4,7 @@ import cors from "cors";
 import authRouter from "./routes/auth.js";
 
 var app=express();
-const PORT=3000;
+const PORT=process.env.PORT||3000;
 //no one allowed
 //app.use(cors());
 
